@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+.vertical-row {
+  Float:left;
+  height:100px;
+  width:1px;
+  background-color: rebeccapurple;
+ } 
