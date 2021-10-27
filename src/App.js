@@ -1,4 +1,3 @@
-import React, { Component } from 'react'
 import './App.css';
 import {Container} from './components/styles/Container.styled'
 import {Appbar} from './components/Appbar.styled'
@@ -9,14 +8,13 @@ import {Design} from './components/Design.styled'
 import {Footer} from './components/Footer.styled'
 import 'font-awesome/css/font-awesome.min.css';
 import Tabs from "./components/Tabs";
-import  CheckBox  from './components/Checkbox'
 
 function App() {
     return (
     <div className="App">
       <Container>
         <Appbar>
-          <p><a style={{color: "#0191F8", fontWeight:"bold"}}>EverDo-</a>MVP</p>
+          <p><a href="#everdo" style={{color: "#0191F8", fontWeight:"bold"}}>EverDo-</a>MVP</p>
           <h1 style={{fontSize: "35px"}}>Design</h1>
         <div>
           
@@ -77,7 +75,7 @@ function App() {
           
 
           </div>
-          <a href="#">
+          <a href="#add">
             <div className="add-tag">
               <h1><i class="fa fa-plus"></i></h1>
             </div>
