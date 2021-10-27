@@ -104,9 +104,11 @@ class App extends Component {
           
 
           </div>
-          <div className="add-tag">
-            <h1><i class="fa fa-plus"></i></h1>
-          </div>
+          <a href="#">
+            <div className="add-tag">
+              <h1><i class="fa fa-plus"></i></h1>
+            </div>
+          </a>
           
         </Tags>
         <Planning>Planning</Planning>

@@ -16,6 +16,10 @@
   justify-content: center;
   color: white;
 }
+.add-tag:hover{
+  transition: ease-in 0.3s;
+  background-color: #014f86;
+}
 
 table{
   text-align: start;
