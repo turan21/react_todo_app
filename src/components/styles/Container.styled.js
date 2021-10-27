@@ -19,6 +19,7 @@ export const Container = styled.div`
     /* grid-gap: 0.25rem; */
     transition: all 0.25s ease-in-out;
     @media (max-width: 750px) {
+        height: auto;
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1fr;
         grid-template-areas:
