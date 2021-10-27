@@ -20,3 +20,23 @@
 table{
   text-align: start;
 }
+
+
+
+.tab-list {  
+  display: flex;
+  list-style-type: none;
+  border-bottom: 1px solid #bfbfbf;
+
+}
+
+.tab-list-item {
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-list-active {
+  border-bottom: solid #0191F8;
+}

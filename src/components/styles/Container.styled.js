@@ -8,7 +8,7 @@ export const Container = styled.div`
     margin: 20px auto;
     border-radius: 30px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    grid-template-rows: 0.3fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr 0.1fr;
     grid-template-columns: 0.07fr 0.2fr 0.73fr;
     grid-template-areas:
         "tabbar tags appbar appbar"
