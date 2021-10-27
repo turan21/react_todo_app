@@ -11,34 +11,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import Tabs from "./components/Tabs";
 import  CheckBox  from './components/Checkbox'
 
-class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      checkboxes: [
-        {id: 1, value: "banana", isChecked: false},
-        {id: 2, value: "apple", isChecked: false},
-        {id: 3, value: "mango", isChecked: false},
-        {id: 4, value: "grap", isChecked: false}
-      ]
-    }
-  }
-  
-  handleAllChecked = (event) => {
-    let fruites = this.state.checkboxes
-    fruites.forEach(fruite => fruite.isChecked = event.target.checked) 
-    this.setState({fruites: fruites})
-  }
-
-  handleCheckChieldElement = (event) => {
-    let fruites = this.state.checkboxes
-    fruites.forEach(fruite => {
-       if (fruite.value === event.target.value)
-          fruite.isChecked =  event.target.checked
-    })
-    this.setState({fruites: fruites})
-  }
-  render(){
+function App() {
     return (
     <div className="App">
       <Container>
@@ -118,5 +91,5 @@ class App extends Component {
     </div>
   );
 }
-}
+
 export default App;
