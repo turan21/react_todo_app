@@ -14,18 +14,18 @@ function App() {
     <div className="App">
       <Container>
         <Appbar>
-          <p><a href="#everdo" style={{color: "#0191F8", fontWeight:"bold"}}>EverDo-</a>MVP</p>
+          <p><a href="#everdo" style={{color: "#0191F8", fontWeight:"bold", textDecoration:"none"}}>EverDo-</a>MVP</p>
           <h1 style={{fontSize: "35px"}}>Design</h1>
         <div>
           
           <Tabs>
-              <div label="Todos">
+          <div label="Todos" count="10">
               </div>
-              <div label="Notes">
+              <div label="Notes" count="12">
               </div>
-              <div label="Links">
+              <div label="Links" count="7">
               </div>
-              <div label="Files">
+              <div label="Files" count=" ">
               </div>
           </Tabs>
         </div>
