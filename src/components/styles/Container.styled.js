@@ -9,7 +9,7 @@ export const Container = styled.div`
     border-radius: 30px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     grid-template-rows: 0.3fr 1fr 1fr 0.2fr;
-    grid-template-columns: 0.05fr 0.2fr 0.75fr;
+    grid-template-columns: 0.07fr 0.2fr 0.73fr;
     grid-template-areas:
         "tabbar tags appbar appbar"
         "tabbar tags planning planning"
