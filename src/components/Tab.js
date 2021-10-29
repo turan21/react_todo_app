@@ -5,6 +5,7 @@ class Tab extends Component {
   static propTypes = {
     activeTab: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
+    count: PropTypes.number.isRequired,
     onClick: PropTypes.func.isRequired,
   };
 
@@ -16,7 +17,7 @@ class Tab extends Component {
   render() {
     const {
       onClick,
-      props: { activeTab, label},
+      props: { activeTab, label, count},
     } = this;
 
     let className = "tab-list-item";
@@ -27,7 +28,7 @@ class Tab extends Component {
 
     return (
       <li className={className} onClick={onClick}>
-        <div className="tab-title"><div className="tab-circle"></div>{label}</div>
+        <div className="tab-title"><div className="tab-circle">{count}</div>{label}</div>
       </li>
     );
   }

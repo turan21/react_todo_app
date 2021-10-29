@@ -8,38 +8,14 @@ import {Design} from './components/Design.styled'
 import {Footer} from './components/Footer.styled'
 import 'font-awesome/css/font-awesome.min.css';
 import Tabs from "./components/Tabs";
+import Tab from './components/Tab';
+import ToDos from './components/ToDos';
 
 function App() {
     return (
     <div className="App">
       <Container>
-        <Appbar>
-          <p><a href="#everdo" style={{color: "#0191F8", fontWeight:"bold", textDecoration:"none"}}>EverDo-</a>MVP</p>
-          <h1 style={{fontSize: "35px"}}>Design</h1>
-        <div>
-          
-          <Tabs>
-          <div label="Todos" count="10">
-              </div>
-              <div label="Notes" count="12">
-              </div>
-              <div label="Links" count="7">
-              </div>
-              <div label="Files" count=" ">
-              </div>
-          </Tabs>
-        </div>
-        <div>
-        <ul>
-        {/* {
-          this.state.checkboxes.map((checkbox, index) => {
-            return (<CheckBox key={index} handleCheckChieldElement={this.handleCheckChieldElement}  {...checkbox} />)
-          })
-        } */}
-        </ul>
-        </div>
-        </Appbar>
-        <Tabbar>
+      <Tabbar>
           <div>
               <h2><i className="fa fa-slack"></i></h2> 
               <h2><i className="fa fa-inbox"></i></h2>
@@ -56,19 +32,20 @@ function App() {
         <Tags>
           <div>
           <ul class="fa-ul">
-            <li style={{color: "#0191F8"}}><i class="fa-li fa fa-circle"></i>PROJECTS</li>
+            <li style={{color: "#0191F8"}}><i class="fa-li fa fa-circle-o"></i>PROJECTS</li>
             <p>EverDo</p>
             <p>Gemsmark</p>
             <p>Rubicon</p>
           </ul>
           <ul class="fa-ul">
-            <li style={{color: "#76a562"}}><i class="fa-li fa fa-circle"></i>PERSONAL</li>
+            <li style={{color: "#76a562"}}><i class="fa-li fa fa-circle-o"></i>PERSONAL</li>
             <p>Shopping</p>
             <p>Health</p>
             <p>Entertainment</p>
           </ul>
+          
           <ul class="fa-ul">
-            <li style={{color: "#dd5d5d"}}><i class="fa-li fa fa-circle"></i>LEARNING</li>
+            <li style={{color: "#dd5d5d"}}><i class="fa-li fa fa-circle-o"></i>LEARNING</li>
             <p>Electron</p>
             <p>Flexbox</p>
           </ul>
@@ -82,9 +59,44 @@ function App() {
           </a>
           
         </Tags>
+        <div className="main-content">
+        <Appbar>
+          <p><a href="#everdo" style={{color: "#0191F8", fontWeight:"bold", textDecoration:"none"}}>EverDo-</a>MVP</p>
+          <h1 style={{fontSize: "35px"}}>Design</h1>
+        <div>
+          
+          <Tabs>
+            <Tab label="Todos" count={12} >
+              <ToDos/>
+            </Tab>
+            <Tab label="Notes" count={11} >
+              Tab 2 xontent
+            </Tab>
+
+          {/* <div label="Todos" count="10">
+              </div>
+              <div label="Notes" count="12">
+              </div>
+              <div label="Links" count="7">
+              </div>
+              <div label="Files" count=" ">
+              </div> */}
+          </Tabs>
+        </div>
+        <div>
+        <ul>
+        {/* {
+          this.state.checkboxes.map((checkbox, index) => {
+            return (<CheckBox key={index} handleCheckChieldElement={this.handleCheckChieldElement}  {...checkbox} />)
+          })
+        } */}
+        </ul>
+        </div>
+        </Appbar>
         <Planning>Planning</Planning>
         <Design>Design</Design>
         <Footer>Footer</Footer>
+        </div>
       </Container>
     </div>
   );
