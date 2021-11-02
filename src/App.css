@@ -132,3 +132,19 @@ table{
   color: #0084e2;
   cursor: pointer;
 }
+.add-item{
+  color: #868686;
+  border-radius: 20px;
+  border: none;
+  margin-top: 10px;
+  padding: 5px 10px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+.add-item:hover{
+  color: #0084e2;
+  cursor: pointer;
+
+}
