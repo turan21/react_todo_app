@@ -11,7 +11,6 @@ export default class ToDos extends React.Component {
 
 
         const { todos, value} = this.state;
-        const check = this.state.check;
 
         return (
             
