@@ -1,5 +1,5 @@
 import React from 'react';
-
+import CheckBoxTaskCard from './widgets/CheckboxTaskCard';
 export default class ToDos extends React.Component {
 
     state = {
@@ -14,13 +14,23 @@ export default class ToDos extends React.Component {
 
         return (
             <div>
-                <input value={value} type="text" onChange={({target: {value}}) => this.setState({value})} />
-                <button onClick={() => this.setState({todos: [...todos, value], value: ''})}>Submit</button>
-                <ul>
+                
                     {
-                        todos.map(todo => <li key={todo}>{todo}</li>)
+                        todos.map(todo => <CheckBoxTaskCard label={todo} tags={[]}></CheckBoxTaskCard>)
                     }
-                </ul>
+                    
+                
+                <form onSubmit={
+                    (event) => {
+                        event.preventDefault();
+                        this.setState({ todos: [...todos, value], value: '' });
+                    }
+                }>
+                <input value={value} type="text" onChange={({target: {value}}) => this.setState({value})} />
+                {/* <button onClick={() => this.setState({todos: [...todos, value], value: ''})}>Submit</button> */}
+                
+                </form>
+                
             </div>
         );
     }
